@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="qq.css">
+    <script src="https://kit.fontawesome.com/be9dbe37c5.js" crossorigin="anonymous"></script>
+    <title>crud</title>
+    
+</head>
+<body>
+<div onpointermove="show()" class="fuck">
+    <div class="head">
+                  <h2>crud</h2> 
+        <p>product managment</p>
+    </div>
+     <div class="inp">
+        <input placeholder="name" id='name' type="text" method="post" required>
+     </div>
+       <div class="inp2">
+        <input onkeyup="getTotal()" placeholder="price"   id="price"     type="number">
+        <input onkeyup="getTotal()" placeholder="taxes"   id="taxes"     type="number">
+        <input onkeyup="getTotal()" placeholder="ads"     id="ads"       type="number">
+        <input onkeyup="getTotal()" placeholder="disount" id="discount"  type="number">
+        <small onkeyup="getTotal()" id="total"></small>
+       </div>
+          <div class="cat">
+            <input id="count"    placeholder="count" type="number">
+            <input id="category" placeholder="category" type="text">
+          </div>
+  </div>
+    <button id="submit" >CREATE</button>
+ <div class="oup">
+    <div class="search">
+         <input onkeyup ="search(this.value)" id="s" placeholder="search " type="text">
+         <button type="submit" id="clearr"> clear </button>
+    </div>
+    <div class="btnsch">
+        <button onclick="serchby(id)" id="ST">search by name</button>
+        <button onclick="serchby(id)" id="SP">search by price</button>
+        <button onclick="serchby(id)" id="SC">search by category</button>
+    </div>
+    
+    <table id="tbl">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>Update</th>
+            <th>delete</th>
+        </tr>
+        <tbody id="tbdy">
+        </tbody>
+    </table>
+    <div id="dellall"></div>
+    <button id='delall' >DELALL</button>
+ </div>
+</div> 
+<script src="ss.js"></script>
+</body>
+<footer>
+    <div class="about"><h1>ABOUT US</h1> </div>
+    <div class="socialmedia"> 
+       <h3>Email Twitter whatsapp</h3>
+       <div class="icons">
+        <a id="ic" href="https://mail.google.com/mail/u/0/#inbox/FMfcgzGqQmTPdkvKsNmSPVwrxnMTJwxG"><h1><i class="fa-solid fa-envelope"></i></h1></a> 
+        <a id="ic" href=""><h1><i class="fa-brands fa-twitter"></i></h1></a>
+        <a id="ic" href=""><h1><i class="fa-brands fa-whatsapp"></i></h1></a>
+       
+       </div> 
+    </div>
+</footer>
+</html>
